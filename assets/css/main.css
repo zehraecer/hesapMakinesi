@@ -311,6 +311,7 @@ button:hover{
     border-radius: 10px;
     background: #1E0936;
     color: #FFE53D;
+    border: none;
 }
 .ucuncu .calculator-keys{
     border-radius: 10px;
