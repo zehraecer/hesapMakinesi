@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+         <div class="myDiv">
+            <h4>calc</h4>
+            <div class="div">
+                <h5>THEME</h5>
+                <label class="first-choice">
+                    <span class="sayi1">1</span><br>
+                    <input
+                      type="radio"
+                      name="toggle"
+                      class="hidden switch"
+                      id="first"
+                      checked
+                    />
+                  </label>
+                  <label class="second-choice">
+                    <span class="sayi2">2</span><br>
+                    <input
+                      type="radio"
+                      name="toggle"
+                      class="hidden switch"
+                      id="second"
+                    />
+                  </label>
+                  <label class="third-choice">
+                    <span class="sayi3">3</span><br>
+                    <input
+                      type="radio"
+                      name="toggle"
+                      class="hidden switch"
+                      id="third"
+                    />
+                  </label>
+            </div>
+         </div>
+        <input type="text" class="calculator-input" disabled>
+        <div class="calculator-keys">
+            <div class="first-line">
+                <button type="button" class="btn1" value="7">7</button>
+                <button type="button" class="btn2" value="8">8</button>
+                <button type="button"  class="btn3" value="9">9</button>
+                <button type="button" class="clearBtn" value="clearbtn">AC</button>
+            </div>
+            
+           <div class="second-line">
+               <button type="button" class="btn4" value="4">4</button>
+               <button type="button" class="btn5"  value="5">5</button>
+               <button type="button" class="btn6" value="6">6</button>
+               <button type="button" class="operator" value="+">+</button>
+           </div>
+
+          <div class="third-line">
+            <button type="button" class="btn7" value="1">1</button>
+            <button type="button" class="btn8" value="2">2</button>
+            <button type="button" class="btn9" value="3">3</button>
+            <button type="button" class="operator" value="-">-</button>
+
+          </div>
+          <div class="fourth-line">
+
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="btn0" value="0">0</button>
+            <button type="button" class="operator" value="/">/</button>
+            <button type="button" class="operator" value="*">x</button>
+
+          </div>
+          
+          <div class="fifth-line">
+            <button type="button" class="clear" value="clear">RESET</button>
+            <button type="button" class="equal-sign operator" value="=">=</button>
+
+          </div>
+    
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
