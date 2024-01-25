@@ -113,3 +113,25 @@ let waitingForSecondValue= false;
          displayValue= displayValue.slice(0,-1)
     }
 updateDisplay();
+
+const numberBar = document.querySelector("#myRange");
+const body= document.querySelector("body");
+
+numberBar.addEventListener("click", function(){
+    if(numberBar.value== "1"){
+        body.classList.remove("ikinci")
+        body.classList.remove("ucuncu")
+    }
+    if(numberBar.value == "2"){
+        if(body.classList.contains("ucuncu")){
+            body.classList.remove("ucuncu")
+         }
+        body.classList.add("ikinci")
+    }
+    if(numberBar.value== "3"){
+       if(body.classList.contains("ikinci")){
+          body.classList.remove("ikinci")
+       }
+        body.classList.add("ucuncu")
+    }
+})

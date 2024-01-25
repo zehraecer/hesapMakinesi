@@ -19,6 +19,11 @@ body{
 }
 .div{
     display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 1px;
+    width: 139px;
+    height: 42px;
 }
 h4{
     color: #FFF;
@@ -60,8 +65,23 @@ input{
 span{
     margin-left: 17px;
 }
-input[type="radio"]{
+input[type="range"]{
+    width: 43px;
+    height: 15px;
+    appearance: none; 
     color: #93261A;
+    border-radius: 13px;
+    background: #242D44;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* WebKit tarayıcıları için stilini devre dışı bırak */
+    appearance: none;
+    width: 9px; /* Başparmak (thumb) genişliği */
+    height: 9px; /* Başparmak (thumb) yüksekliği */
+    border-radius: 9px;
+    cursor: pointer; /* Fare işaretçisi türü */
+    margin: 1px 0px 1px 2px;
+    background-color:#D03F2F
 }
 
 h5{
@@ -112,6 +132,11 @@ h5{
     letter-spacing: -0.667px;
     margin-top: 22px;
 }
+button:hover{
+    border-radius: 10px;
+    background: #FFFFFE;
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+}
 .clearBtn{
     width: 80px;
     height: 50px;
@@ -124,7 +149,11 @@ h5{
     font-weight: 700;
     margin-top: 22px;
 
-    
+}
+.clearBtn:hover{
+    border-radius: 10px;
+    background: #A2B2E1;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
 }
 .clear{
     width: 170px;
@@ -140,6 +169,11 @@ h5{
     margin-top: 22px;
 
 }
+.clear:hover{
+    border-radius: 10px;
+    background: #A2B2E1;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+}
 .equal-sign{
     width: 170px;
     height: 50px;
@@ -153,4 +187,194 @@ h5{
     margin-top: 22px;
 
 }
+.equal-sign:hover{
+    border-radius: 10px;
+    background: #F96B5B;
+    box-shadow: 0px -4px 0px 0px #93261A inset;
+}
 
+.numberBar {
+    display: block;
+    
+}
+.changeNumber {
+    display: flex; 
+    gap: 7px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 15px 5px 18px;
+
+}
+.slider{
+    margin-left: 13px;
+}
+.ikinci{
+    background: #E6E6E6;  
+}
+.ikinci .calculator-input{
+    background: #EEE;
+    color: #36362C;
+    text-align: right;
+    font-family: "League Spartan";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.933px;
+}
+.ikinci .calculator-keys{
+    background: #D2CDCD;
+}
+.ikinci .clearBtn{
+    border-radius: 10px;
+    background: #378187;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+.ikinci .clearBtn:hover{
+    border-radius: 10px;
+    background: #62B5BC;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+.ikinci .clear{
+    border-radius: 10px;
+    background: #378187;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+.ikinci .clear:hover{
+    border-radius: 10px;
+    background: #62B5BC;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+
+.ikinci button{
+    border-radius: 10px;
+    background: #E5E4E1;
+    box-shadow: 0px -4px 0px 0px #A79E91 inset;
+    border: none;
+}
+.ikinci button:hover{
+    border-radius: 10px;
+    background: #FFF;
+   box-shadow: 0px -4px 0px 0px #A79E91 inset;
+}
+.ikinci .equal-sign{
+    border-radius: 10px;
+    background: #C85402;
+    box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+.ikinci .equal-sign:hover{
+    border-radius: 10px;
+    background: #FF8A38;
+    box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+.ikinci h4{
+    color: #36362C;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.533px;
+}
+.ikinci h5{
+    color: #36362C;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.ikinci .changeNumber{
+    color: #36362C;
+    text-align: center;
+    font-family: Spartan;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.ikinci input[type="range"]{
+    background: #D2CDCD;
+}
+
+
+
+.ucuncu{
+    background: #17062A;
+}
+.ucuncu .calculator-input{
+    border-radius: 10px;
+    background: #1E0936;
+    color: #FFE53D;
+}
+.ucuncu .calculator-keys{
+    border-radius: 10px;
+   background: #1E0936;
+}
+.ucuncu button{
+    border-radius: 10px;
+    background: #331C4D;
+    box-shadow: 0px -4px 0px 0px #881C9E inset;
+    color: #FFE53D;
+
+}
+.ucuncu button:hover{
+    border-radius: 10px;
+    background: #6C34AC;
+    box-shadow: 0px -4px 0px 0px #881C9E inset;
+}
+.ucuncu .clearBtn{
+    border-radius: 10px;
+    background: #56077C;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+    color: #FFF;
+}
+.ucuncu .clearBtn:hover{
+    border-radius: 10px;
+    background: #8631AF;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+.ucuncu .clear{
+    border-radius: 10px;
+    background: #56077C;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+    color: #FFF;
+}
+.ucuncu .clear:hover{
+    border-radius: 10px;
+    background: #8631AF;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+.ucuncu .equal-sign{
+    border-radius: 10px;
+    background: #00DED0;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;  
+    color: #1A2327;
+}
+.ucuncu .equal-sign:hover{
+    border-radius: 10px;
+    background: #93FFF8;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+}
+
+.ucuncu h4{
+    color: #FFE53D;
+}
+.ucuncu h5{
+    color: #FFE53D;
+}
+.ucuncu .changeNumber{
+    color: #FFE53D;
+    
+}
+.ucuncu input[type="range"]{
+    background: #1E0936;
+}
+
+.ucuncu input[type="range"]::-webkit-slider-thumb {
+    background-color:#00DED0
+}

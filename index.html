@@ -14,35 +14,15 @@
          <div class="myDiv">
             <h4>calc</h4>
             <div class="div">
-                <h5>THEME</h5>
-                <label class="first-choice">
-                    <span class="sayi1">1</span><br>
-                    <input
-                      type="radio"
-                      name="toggle"
-                      class="hidden switch"
-                      id="first"
-                      checked
-                    />
-                  </label>
-                  <label class="second-choice">
-                    <span class="sayi2">2</span><br>
-                    <input
-                      type="radio"
-                      name="toggle"
-                      class="hidden switch"
-                      id="second"
-                    />
-                  </label>
-                  <label class="third-choice">
-                    <span class="sayi3">3</span><br>
-                    <input
-                      type="radio"
-                      name="toggle"
-                      class="hidden switch"
-                      id="third"
-                    />
-                  </label>
+              <h5>THEME</h5>
+              <div class="numberBar">
+                  <div class="changeNumber">
+                      <p class="one">1</p>
+                      <p class="two">2</p>
+                      <p class="three">3</p>
+                  </div>
+                  <input type="range" min="1" max="3" value="1" class="slider" id="myRange">
+              </div>
             </div>
          </div>
         <input type="text" class="calculator-input" disabled>
@@ -51,7 +31,7 @@
                 <button type="button" class="btn1" value="7">7</button>
                 <button type="button" class="btn2" value="8">8</button>
                 <button type="button"  class="btn3" value="9">9</button>
-                <button type="button" class="clearBtn" value="clearbtn">AC</button>
+                <button type="button" class="clearBtn" value="clearbtn">DEL</button>
             </div>
             
            <div class="second-line">
@@ -88,7 +68,7 @@
 
 
 
-
+ 
     <script src="assets/js/script.js"></script>
 </body>
 </html>
