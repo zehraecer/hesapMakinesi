@@ -222,6 +222,7 @@ button:hover{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.933px;
+    border: none;
 }
 .ikinci .calculator-keys{
     background: #D2CDCD;
